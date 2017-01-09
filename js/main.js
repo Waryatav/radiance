@@ -58,7 +58,7 @@ $(document).ready(function () {
                 $('.slider-bot').owlCarousel('destroy');
                  $('.slider-bot').html(data);
                  $('.slider-bot').owlCarousel(
-                     {
+                     { 
                          loop:true,
                          nav:true,
                          items:1,
