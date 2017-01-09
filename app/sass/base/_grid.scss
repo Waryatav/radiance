@@ -1,0 +1,40 @@
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  @extend %clearfix;
+}
+@media (min-width: 768px) {
+  .container {
+    //width: 766px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+  // width: 990px;
+  width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    // width: 990px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container {
+    /*width: 1920px;*/
+    width: 100%;
+  }
+}

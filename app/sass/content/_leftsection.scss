@@ -1,0 +1,286 @@
+.left_section{
+	width: 33.3%;
+	position: relative;
+    float:left;
+	.logo_container{
+		width: 100%;
+		display: block;
+		background: url($_base + "/img/bg/logo_bg.jpg") no-repeat;
+		height: 335px;
+    	background-size: cover;
+    	.logo{
+			display: block;
+			position: relative;
+    		top: 3%;
+    		text-align: center;
+		}
+    	.line{
+			display: block;
+			position: relative;
+			left: 16%;
+			bottom: -7px;
+    		height: 1px;
+    		width: 68%;
+    		background-color: #dfc8b9;
+    		z-index: 1;
+    		&::after{
+    			position: absolute;
+    			z-index: 2;
+    			width: 32px;
+    			height: 15px;
+   				background-color: #fff8f0;
+    			content: "";
+    			left: 46%;
+    			top: -4px;
+    		}
+    	}
+    	span{
+    	font-family: $gill;
+    	font-size: 22px;
+    	text-transform: uppercase;
+    	text-align: center;
+    	color: #a88975;
+    	margin-bottom: 25px;
+
+    	}
+    	.logo-dot{
+    		width: 8px;
+    		height: 8px;
+    		background-color: #d4b7a5;
+			display: block;
+    		border-radius: 50%;
+    		position: absolute;
+    		left: 50%;
+    		bottom: 5.30%;
+    		z-index: 3;
+    	}
+
+
+	}
+
+.main_menu{
+	background: url($_base + "/img/bg/left_section_mnu_bg.jpg") no-repeat;
+	margin-top: -17px;
+	height:388px;
+    background-size: cover;
+    ul{
+		list-style-type: none;
+        padding-left: 20px;
+        padding-top: 20px;
+		li{
+			padding: 17px 0;
+            padding-left: 20px;
+            box-sizing: border-box;
+            &:hover{
+                -webkit-transition: all 0.2s ease-in-out 0.1s;
+                -moz-transition: all 0.2s ease-in-out 0.1s;
+                -o-transition: all 0.2s ease-in-out 0.1s;
+                transition: all 0.2s ease-in-out 0.1s;
+                cursor: pointer;
+                background: #d56c7c;
+                .mnu_arrow{
+                    opacity: 1;
+                    -webkit-transition: all 0.2s ease-in-out 0.1s;
+                    -moz-transition: all 0.2s ease-in-out 0.1s;
+                    -o-transition: all 0.2s ease-in-out 0.1s;
+                    transition: all 0.2s ease-in-out 0.1s;
+                }
+                
+            }
+		}
+	}
+	&__item{
+		font-family: $gill; 
+		font-size: 30px;
+		color: #ffffff;
+		margin-left: 48px;
+    	top: 5px;
+   		text-align: center;
+        text-transform: uppercase;
+	}
+	.mnu_arrow{
+		background: url($_base + "/img/icons/menu_arrow.png");
+		position: relative;
+		float: left;
+		width: 36px;
+		height: 37px;
+		margin-right:-20px;
+        top: 0;
+        opacity: 0.5;
+    }
+
+&::before{
+    background: url($_base + "/img/bg/left_section_mnu_bg_before.png") no-repeat;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    content: "";
+    top: 333px;
+    } 
+&::after{
+    background: url($_base + "/img/bg/left_section_mnu_bg_after.png") no-repeat;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    content: "";
+    top: 707px;
+    } 
+}
+
+.catalogue{
+
+
+    background:url($_base + "/img/bg/left_section_catalogue_mnu_bg.jpg") no-repeat;
+    background-size: cover;
+    padding:30px 0;
+    position: relative;
+    height: 339px;
+    h3{
+        margin: 0;
+        text-align: center;
+        font-family: $gill;
+        font-size: 40px;
+        color:#a53e4d;
+        margin-bottom: 13px;
+
+    }
+    .visible{
+      height: 270px;
+      width: 100%;
+      overflow: hidden;
+    .catalogue_menu{
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 88px;
+
+            li{
+                padding: 12px 0;
+                &:hover{
+                    background-color: #e3949f;
+                    cursor: pointer;
+                }
+            }
+        
+        &__item{
+            font-family: $gill; 
+            font-size: 19px;
+            text-transform: uppercase;
+            color:#604c3e;
+            padding-left: 20px;
+            
+          }
+
+      }
+    }
+    .catalogue_arrow_up{
+        background: url($_base + "/img/icons/catalogue_arrow_up.png") no-repeat;
+        position: absolute;
+        width:26px;
+        height:15px;
+        top:105px;
+        left:16px;
+    }
+    .catalogue_arrow_down{
+        background: url($_base + "/img/icons/catalogue_arrow_down.png") no-repeat;
+        position: absolute;
+        width:26px;
+        height:15px;
+        top:338px;
+        left:16px;
+
+    }   
+
+&__line{
+    background: url($_base + "/img/bg/catalogue_line.png") no-repeat right;
+    height: 2px;
+    width:80%;
+    float:right;
+    margin-bottom:12px;
+}
+}
+.custom_care{
+    padding: 30px 0;
+    background: url($_base + "/img/bg/left_section_custom_care_bg.jpg") 0 0 no-repeat;
+    position: relative;
+    height: 237px;
+    h3{
+        font-family: $gill;
+        font-size: 40px;
+        color: #604c3e;
+        text-transform: uppercase;
+        text-align: center;
+        margin:0;
+        margin-bottom:13px;
+    }
+    &__menu{
+        list-style-type: none;
+        margin: 0;
+        padding-left: 89px;
+        li{
+            padding: 12px 10px;
+                &:hover{
+                    -webkit-transition: all 0.2s ease-in-out 0.1s;
+                    -moz-transition: all 0.2s ease-in-out 0.1s;
+                    -o-transition: all 0.2s ease-in-out 0.1s;
+                    transition: all 0.2s ease-in-out 0.1s;
+                    cursor: pointer;
+                    background: #a88975;
+                    .custom_care__menu__item{
+                        opacity: 1;
+                        -webkit-transition: all 0.2s ease-in-out 0.1s;
+                        -moz-transition: all 0.2s ease-in-out 0.1s;
+                        -o-transition: all 0.2s ease-in-out 0.1s;
+                        transition: all 0.2s ease-in-out 0.1s;
+                }
+                
+            }
+        }
+        &__item{
+            font-family: $gill;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+            
+        }
+    }
+
+    &__line{
+    background: url($_base + "/img/bg/custom_care_line.png") no-repeat right;
+    height: 2px;
+    width:80%;
+    float:right;
+    margin-bottom:12px;
+}
+
+    &__arrow_up{
+        background: url($_base + "/img/icons/custom_care_arrow_up.png") no-repeat;
+        position: absolute;
+        width:30px;
+        height:18px;
+        top:105px;
+        left:16px;
+    }
+    &__arrow_down{
+        background: url($_base + "/img/icons/custom_care_arrow_down.png") no-repeat;
+        position: absolute;
+        width:30px;
+        height:18px;
+        top:239px;
+        left:16px;
+    }
+    &__arrow{
+        background: url($_base + "../img/icons/custom_care_arrow_right.png");
+        position: relative;
+        float: left;
+        width: 21px;
+        height: 21px;
+        top: 0;
+        opacity: 0.5;
+        margin-right: 15px;  
+    }
+    
+}
+
+}

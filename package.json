@@ -1,0 +1,50 @@
+{
+  "name": "medcenter",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^6.5.1",
+    "cssnano": "^3.8.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "imagemin-pngquant": "^5.0.0",
+    "postcss-assets": "^4.1.0",
+    "postcss-fixes": "^1.4.2",
+    "postcss-focus": "^1.0.0",
+    "postcss-font-magician": "^1.5.0",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-short": "^2.0.1",
+    "postcss-short-spacing": "^1.0.0",
+    "postcss-sorting": "^1.7.0",
+    "rimraf": "^2.5.4",
+    "stylefmt": "^4.3.1",
+    "yargs": "^6.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gorotto/medcenter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gorotto/medcenter/issues"
+  },
+  "homepage": "https://github.com/Gorotto/medcenter#readme",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)"
+}
