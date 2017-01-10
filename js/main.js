@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    var base = '';
+    if(typeof vars !== 'undefined' && vars.template !== null){
+        base = vars.template
+    }
     $(document).on('click', '#new-arrivals', function () {
         $.ajax({
             url: vars.url,
@@ -54,15 +58,16 @@ $(document).ready(function () {
                 cat_id: $(this).html(),
             },
             success: function (data) {
-                // $('.slider-bot').html(data);
-                $('.slider-bot').owlCarousel('destroy');
-                 $('.slider-bot').html(data);
-                 $('.slider-bot').owlCarousel(
-                     { 
-                         loop:true,
+                 $('.slider-bot-container').html(data);
+                console.log($(data).children('.product'));
+                jQuery('.slider-bot').owlCarousel(
+                     {
+                         // loop: $(this).children().length > 1,
+                        // loop:true,
                          nav:true,
                          items:1,
                          autoplay: false,
+                         navText : ["<img src='"+base+"img/icons/slider-bot-prev.png'>","<img src='"+base+"img/icons/slider-bot-next.png'>"]
                      }
                  );
             }

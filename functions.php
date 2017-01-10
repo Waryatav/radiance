@@ -217,7 +217,7 @@ add_action( 'wp_ajax_nopriv_get_posts_by_category', 'get_posts_by_category' );
 function get_posts_by_category() {
 
     if ( $_POST ) {
-        $cat_id = $_POST['cat_id'];
+        $cat = $_POST['cat_id'];
 
         $args          = array(
             'post_type'      => 'products',
@@ -226,13 +226,15 @@ function get_posts_by_category() {
                     'taxonomy' => 'categories',
                     'field'    => 'name',
                     'terms'    => array(
-                        $cat_id
+                        $cat
                     )
                 ),
             ),
             'posts_per_page' => - 1
         );
         $section_query = get_posts( $args );
+
+//        fw_print($section_query);
         fw_render_view( get_template_directory() . '/template-parts/products.php', array( 'section_query' => $section_query ), false );
     }
 
